@@ -13,7 +13,7 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build:
+  VM_SetUpJDK:
 
     runs-on: ubuntu-latest
 
