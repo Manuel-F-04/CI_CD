@@ -1,11 +1,12 @@
-on:
+on: #trigger
   push:
     branches: [ "main" ]
 
 jobs:
-  VM_SetUpJDK:
-
+  Build_Test:
+    #Definition Job
     runs-on: ubuntu-latest
+      #Workflow soll auf VM mit letzter bekannte Ubuntu Version laufen
 
     steps:
     - uses: actions/checkout@v3 
@@ -21,3 +22,4 @@ jobs:
           #In diesem Workflow wird der Maven-Abhängigkeitscache zwischen den Builds wiederhergestellt, um die Build-Zeit zu verkürzen
     - name: Build with Maven
       run: mvn -B package --file pom.xml
+        #führt den maven-Build Prozess aus
