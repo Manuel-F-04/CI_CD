@@ -14,7 +14,7 @@ public class CalculatorTest {
 
     @Test
     public void testSub(){
-        assertEquals(Calculator.substract(a,b),a+b);
+        assertEquals(Calculator.substract(a,b),a-b);
     }
 
     @Test
