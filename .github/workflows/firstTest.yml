@@ -1,3 +1,4 @@
+name: CalculatorTest
 on: #trigger
   push:
     branches: [ "main" ]
