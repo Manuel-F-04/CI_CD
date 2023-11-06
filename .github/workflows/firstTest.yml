@@ -1,7 +1,7 @@
 name: Calculator_Test_Template
-on: #trigger
-  push:
-    branches: [ "main" ]
+on: [release]
+  #push:
+    #branches: [ "main" ]
 
 jobs:
   Build_Test:
